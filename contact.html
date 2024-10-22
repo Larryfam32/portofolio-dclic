@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="identite">
+            <a href="index.html"><img src="image/masque3.jpg" alt="logo"></a>
+            <a href="index.html"><p>Portfolio de Larry</p></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p class="mot">Contact</p>
+
+    <div class="cont">
+        <div class="form">
+            <form id="contact-form" onsubmit="return validateForm()">
+               <div class="frm">
+                <label for="name">Nom complet:</label> <br>
+                <input type="text" id="name" required>
+               </div>
+        
+                <div class="frm">
+                    <label for="email">E-mail:</label> <br>
+                <input type="email" id="email" required>
+                </div>
+        
+                <div class="frm">
+                    <label for="subject">Objet:</label> <br>
+                <input type="text" id="subject" required>
+                </div>
+        
+                <div class="frm">
+                    <label for="message">Message:</label> <br>
+                <textarea id="message" rows="6" cols="4" required></textarea>
+                </div>
+        
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+
+        <div class="inform">
+            <table>
+                <tr>
+                    <td>Téléphone:(+229)</td>
+                    <td>97096078 / 95017659 / 47476272</td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td>larryfam32@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Pays de résidence</td>
+                    <td>Bénin</td>
+                </tr>
+                <tr>
+                    <td>Ville</td>
+                    <td>Cotonou</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+   
+
+    <footer>
+        Info plus : 
+        <marquee behavior="" direction="">Réalisé par Larryfam32, téléphone : +229 97096078 / 95017659 / 47476272 ; e-mail : larryfam32@gmail.com</marquee>
+        <div class="rs">
+            <img src="image/facebook.png" alt="">
+            <img src="image/insta.jpg" alt="">
+            <img src="image/linkedin.png" alt="">
+        </div>
+    </footer>
+
+    <script>
+        function validateForm() {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (name === "" || email === "" || subject === "" || message === "") {
+                alert("Tous les champs doivent être remplis !");
+                return false; // Empêche l'envoi du formulaire
+            }
+
+            // Envoi des données par e-mail (simulé ici)
+            alert(`Formulaire envoyé !\nNom : ${name}\nE-mail : ${email}\nObjet : ${subject}\nMessage : ${message}`);
+            
+            // Ici, vous pouvez intégrer un service d'envoi d'e-mails si nécessaire.
+            
+            return false; // Empêche l'envoi réel pour cette démonstration
+        }
+    </script>
+</body>
+</html>

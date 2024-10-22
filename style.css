@@ -1,0 +1,209 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box; font: 1em sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(24, 24, 24);
+    color: aliceblue;
+    
+}
+footer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 88, 0);
+} 
+
+footer .rs{
+    display: flex;
+}
+footer .rs img{
+    width: 35px;height: 35px;
+   border-radius: 50%;
+   margin:10px 50px;
+}
+
+header{
+    box-shadow: 3px 3px 3px rgb(43, 42, 42);
+    border: 0px 0px 0px 1px solid rosybrown;
+    width: 100%;
+    height: 120px;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .identite{
+    display: flex;
+    align-items: center;
+}
+header .identite img{
+    width: 50px;
+    height: 60px;
+    border-radius: 60%;
+}
+header .identite p{
+    margin-left: 50px;
+   font-size: 1.5rem;
+   font-style: italic;
+   font-weight: bold;
+   color: aliceblue;
+
+}
+
+header nav ul{
+    display: flex;
+
+}
+header nav ul li{
+    margin-left: 20px;
+    padding: 5px 10px;
+    font-size: 0.95rem;
+    list-style: none;
+    transition: all ease 0.6s;
+
+}
+header nav ul li:hover{
+   padding: 5px 15px;
+   font-size: 1.1rem;
+   background-color: rgb(250, 255, 173);
+   border-radius: 15px 15px 0px 0px;
+   border-bottom: 5px solid rgb(255, 106, 0);
+
+}
+header nav ul li a{
+   text-decoration: none;
+   color: rgb(255, 106, 0);
+   
+}
+header nav ul li a:hover{
+    color: rgb(1, 42, 70);
+    
+ }
+
+ .mot{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: yellow;
+
+ }
+
+ .sect1 {
+    display: flex;
+ }
+ .tof{
+    width: 50%;
+ }
+ .tof img{
+    width: 300px;
+    height: 400px;
+    border-radius: 50% 50% 0% 0%;
+    border: 5px solid yellow;
+ }
+ .identi{
+    margin-top: 200px;
+ }
+ .mot1{
+    width: 60%;
+    text-align: justify;
+    background-color: rgb(123, 122, 122);
+    margin: 50px auto;
+    padding: 15px 10px;
+ }
+
+.comp{
+    margin: 20px auto;
+    padding: 10px 20px;
+ }
+
+ .comp h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: greenyellow;
+    text-align: center;
+
+ }
+ .comp progress{
+    width: 80%;
+    margin: 15px auto;
+    
+ }
+ .comp .mot2{
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: justify;
+    padding: 15px 25px;
+    
+ } 
+ .aaaa{
+    padding: 10px 20px;
+    text-align: justify;
+
+ }
+ .aaaap{
+    margin: 10px 100px;
+    padding: 10px 20px;
+    text-align: justify;
+
+ }
+
+ .cont{
+    margin: 30px 5px;
+    display: flex;
+ }
+ .cont .form{
+    background-color: rgb(101, 99, 99);
+    border-radius: 10px;
+    margin: 5px 20px;
+    width: 60%;
+    border-right: 2px solid aliceblue;
+    
+    
+    
+ }
+ #contact-form{
+    padding: 30px 50px;
+ }
+ #contact-form .frm{
+    margin: 50px 10px;
+ }
+ #contact-form .frm input, #contact-form .frm textarea{
+    width: 100%;
+ }
+ #contact-form .btn{
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 25px auto;
+    transition: all ease 0.4s;
+ }
+ #contact-form .btn:hover{
+    background-color: rgb(119, 9, 152);
+    color: aliceblue;
+    cursor: pointer;
+   
+ }
+ .inform{
+    padding-top: 100px;
+ }
+
+ .proj{
+    padding: 5px 100px;
+ }
+ .proj h2{
+    color: rgb(159, 255, 253);
+    text-align: center;
+    margin: 15px;
+ }
+ .proj ul{
+    list-style: square;
+    margin-left: 100px;
+    margin-bottom: 50px;
+ }
